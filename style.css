@@ -8,7 +8,23 @@ width:100%;
 .travel_mainDiv h5, travel_mainDiv p{
 margin-left:20px;
 }
-.row:: after{
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 150px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.row:after{
 content:"";
 clear:both;
 display:table;
@@ -28,19 +44,21 @@ background-color:white;
     top:0;
     z-index:99999}
 
-.navbar-header{color: aqua}
+.navbar-header{color: #0F044C}
 
-#myNavbar{background-color:aquamarine; }
+#myNavbar{background-color:white; }
 
-#nav navbar-nav,li{
+#nav navbar-nav,li nav{
     font-family: cursive;
     font-size: 20px;
+    color: white;
     
 }
 
-#nav navbar-nav,li:hover{background-color:black;}
 
-.announcement{background-color: aqua}
+
+.announcement{background-color: #0F044C;
+color: white}
 
 #contact iframe
 {
@@ -55,10 +73,7 @@ background-color:white;
     text-shadow: none;
 }
  
-input
-{
-    background: grey
-}
+
 
 .t-div
 {
@@ -86,10 +101,10 @@ input
     float: right
 }
 
-.navbar-header{ background-color: aqua;
+.navbar-header{ background-color:#0F044C;
 }
 
-#myNavbar{ background-color: aqua;}
+#myNavbar{ background-color: #0F044C;}
 
 .modal-content{ margin-top: 100px ;
     text-align: center;
